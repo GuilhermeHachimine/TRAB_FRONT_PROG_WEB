@@ -1,0 +1,86 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+.header {
+    background-color: #2f9e41;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    height: 70px;
+}
+
+.logo {
+    width: 63px;
+    height: 52px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+}
+.user-welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-message {
+    font-size:14px;
+    color: #fff;
+    text-align: right;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.welcome-name {
+    font-size:14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    flex-wrap: break-word;
+}
+
+.user-avatar {
+    margin: 0.3em 0 0 0.5em;
+}
+
+
+.body {
+
+}
+
+.carousel{
+
+}
+
+.body-menu {
+
+}
+
+.footer {
+    
+}
