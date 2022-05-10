@@ -132,10 +132,18 @@ time, mark, audio, video {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.opt-title{
+.opt-text{
     font-size:1.1em;
     width: 50%;
     padding: 0.5em;
+    color: #fff;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    flex-wrap: break-word;
+}
+
+.opt-title{
+    font-size:1.1em;
     font-weight: bold;
     color: #fff;
     text-align: left;
