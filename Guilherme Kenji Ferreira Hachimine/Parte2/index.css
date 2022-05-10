@@ -27,22 +27,144 @@ time, mark, audio, video {
     justify-content: space-between;
     align-items:center;
     height: 70px;
+    padding: 0 15px;
 }
 
+.sub-header {
+    background-color: #2f9e41;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 105px;
+    padding: 15 15px 0 15px;
+    display: none !important;
+} 
+ 
 .logo {
+    width:50%;
     width: 63px;
     height: 52px;
 }
 
+.sub-logo {
+        width:50%;
+        width: 63px;
+        height: 52px;
+}
+
+.small-sub-logo {
+    margin-left: -15%;
+    display:none !important;
+    height:25px;
+    padding: 12px 0;
+}
 .menu {
+    width:25%;
     display: flex;
     flex-direction: row;
 }
 
-.user {
+.sub-menu {
     display: flex;
     flex-direction: row;
 }
+.menu-options
+{
+    
+    border: none;
+    width: 8%;
+    height: 30px;
+    background-color: #2f9341;
+    outline: none;
+    margin: 0 14px;
+
+}
+
+.email {
+	background: url('./resources/email.png') no-repeat -2px -26px;
+	width: 23px;
+	height: 19px;
+    
+}
+
+.email:hover {
+	background: url('./resources/email.png') no-repeat -2px -96px;
+	width: 23px;
+	height: 19px;
+}
+
+.book {
+	background: url('./resources/book.png') no-repeat -2px -26px;
+	width: 23px;
+	height: 19px;
+    
+}
+
+.book:hover {
+	background: url('./resources/book.png') no-repeat -2px -96px;
+	width: 23px;
+	height: 19px;
+}
+.student_doc {
+	background: url('./resources/student_doc.png') no-repeat -2px -26px;
+	width: 23px;
+	height: 19px;
+    
+}
+
+.student_doc:hover {
+	background: url('./resources/student_doc.png') no-repeat -2px -96px;
+	width: 23px;
+	height: 19px;
+}
+.password {
+	background: url('./resources/password.png') no-repeat -2px -26px;
+	width: 23px;
+	height: 19px;
+    
+}
+
+.password:hover {
+	background: url('./resources/password.png') no-repeat -2px -96px;
+	width: 23px;
+	height: 19px;
+}
+.notification {
+	background: url('./resources/notification.png') no-repeat -2px -26px;
+	width: 23px;
+	height: 19px;
+    
+}
+
+.notification:hover {
+	background: url('./resources/notification.png') no-repeat -2px -96px;
+	width: 23px;
+	height: 19px;
+}
+
+
+
+.user {
+    width:25%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:10px
+}
+
+
+.user-avatar {
+    margin: 0.3em 0 0 0.5em;
+    justify-self:flex-end;
+}
+
+.sub-user {
+    position: absolute;
+    left: 93%;
+    width:38px;
+    padding-right: 30px;
+}
+
+
 .user-welcome {
     display: flex;
     flex-direction: column;
@@ -50,15 +172,28 @@ time, mark, audio, video {
 
 .welcome-message {
     font-size:14px;
+    line-height:20px;
     color: #fff;
     text-align: right;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.exit {
+    background: url('./resources/exit.png') no-repeat;
+    width:14px;
+    margin: 4.2px 0px 4.2px 14px;
+}
 
+.exit:hover {
+    background: url('./resources/exit2.png') no-repeat;
+    width:14px;
+    margin: 4.2px 0px 4.2px 14px;
+}
 
 
 .welcome-name {
     font-size:14px;
+    line-height:20px;
+    max-height: 35px;
     font-weight: bold;
     color: #fff;
     text-align: right;
@@ -68,9 +203,7 @@ time, mark, audio, video {
 
 
 
-.user-avatar {
-    margin: 0.3em 0 0 0.5em;
-}
+
 
 
 .body {
@@ -94,27 +227,41 @@ time, mark, audio, video {
 }
 
 .body-menu {
-
+    margin-top:20px
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15px 0 15px;
+}
 
+.footer-img {
+    margin-top:74px;
+    margin-bottom: 2em;
+}
+
+.footer-img2 {
+    margin-top:60;
+    margin-bottom: 2em;
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
-    margin: 0 auto;
+   
+    margin: 0 15px;
   }
   
   .flex > div {
-    flex: 1 1 300px;
+    flex: 0 0 300px;
     margin: 0 5px 5px 0;
   }
 
 .opt {
     display: flex;
+    max-height: 74px;
     flex-direction: row;
 }
 
@@ -133,7 +280,7 @@ time, mark, audio, video {
 }
 
 .opt-text{
-    font-size:1.1em;
+    font-size:15px;
     width: 50%;
     padding: 0.5em;
     color: #fff;
@@ -155,19 +302,120 @@ time, mark, audio, video {
     background-color:#CA2C2D; 
 }
 
-.light-blue {
-    background-color:#337ab7
-}
-
-
-.yellow {
-    background-color:#E28400
+.red:hover {
+    background-color:#990000
 }
 
 .dark-blue {
     background-color:#2E7EA3
 }
+.dark-blue:hover {
+    background-color:#2E7EA3;
+    filter: brightness(70%);
+}
+
+.yellow {
+    background-color:#E28400
+}
+.yellow:hover {
+    background-color:#fc9300
+}
+.light-blue{
+    background-color:#64B2B2
+}
+.light-blue:hover {
+    background-color:#64B2B2;
+    filter: brightness(70%);
+}
 
 .grey {
     background-color:#818f96
+}
+
+.grey:hover {
+    background-color:#818f96;
+    filter: brightness(70%);
+}
+.exit-section:hover {
+    background-color:#008042;
+}
+.exit-section {
+    margin-top:20px;
+    background-color:#2f9341;
+    width: 100%;
+    color: #fff;
+    font-size:15px;
+    padding: 5px 0px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: none !important;
+}
+
+.sub-logomenu {
+    position: absolute;
+    left:48%;
+    padding: 8px 0 0 0;
+}
+
+
+
+.sub-menu {
+    margin-left:-35%;
+    padding: 10px 0 0 0;
+}
+
+.menu-logo {
+    display: none !important;
+    width:50%;
+    width: 63px;
+    height: 52px;
+    display:flex;
+    justify-self: center;
+}
+/* Media Screens*/
+@media screen and (max-width:992px) {
+    .exit-section {
+        display: block !important;
+    }
+    .sub-header {
+        display: block !important;
+    }
+    .sub-logo {
+        display: block !important;
+    }
+
+    .flex {
+        max-width: 700px !important;
+    }
+    .exit {
+        display: none !important;
+    }
+    .menu {
+        display: none !important;
+    } 
+    .user-welcome {
+        display: none !important;
+    } 
+    .logo {
+        display: none !important;
+    } 
+
+    .header {
+        display: none !important;
+    } 
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .small-sub-logo {
+        display: block !important;
+    }
+    .sub-logo {
+        display:none !important;
+    }
+
+    .sub-logomenu {
+        padding: 0 0;
+    }
 }
