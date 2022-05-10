@@ -1124,6 +1124,13 @@
             </div>
             <div class="row">
               <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                      <h3>Dados do Bolsista</h3>
+                    </div>
+                  </div>
+                </div>
                 <div class="form contact-form">
                   <form
                     action="forms/contact.php"
@@ -1134,41 +1141,114 @@
                     <div class="form-group">
                       <input
                         type="text"
-                        name="name"
+                        name="CPF"
                         class="form-control"
-                        id="name"
-                        placeholder="Your Name"
+                        id="CPF"
+                        placeholder="CPF"
                         required
                       />
                     </div>
                     <div class="form-group mt-3">
                       <input
-                        type="email"
+                        type="nome"
                         class="form-control"
-                        name="email"
+                        name="nome"
                         id="email"
-                        placeholder="Your Email"
+                        placeholder="Nome"
                         required
                       />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="uf">UF: </label>
+                      <select name="uf" id="uf">
+                        <option value=""></option>
+                        <option value="uf">AC</option>
+                        <option value="uf">AL</option>
+                        <option value="uf">AP</option>
+                        <option value="uf">AM</option>
+                        <option value="uf">BA</option>
+                        <option value="uf">CE</option>
+                        <option value="uf">DF</option>
+                        <option value="uf">ES</option>
+                        <option value="uf">GO</option>
+                        <option value="uf">MA</option>
+                        <option value="uf">MT</option>
+                        <option value="uf">MS</option>
+                        <option value="uf">MG</option>
+                        <option value="uf">PA</option>
+                        <option value="uf">PB</option>
+                        <option value="uf">PR</option>
+                        <option value="uf">PE</option>
+                        <option value="uf">PI</option>
+                        <option value="uf">RJ</option>
+                        <option value="uf">RN</option>
+                        <option value="uf">RS</option>
+                        <option value="uf">RO</option>
+                        <option value="uf">RR</option>
+                        <option value="uf">SC</option>
+                        <option value="uf">SP</option>
+                        <option value="uf">SE</option>
+                        <option value="uf">TO</option>
+                      </select>
                     </div>
                     <div class="form-group mt-3">
                       <input
                         type="text"
                         class="form-control"
-                        name="subject"
-                        id="subject"
-                        placeholder="Subject"
+                        name="municipio"
+                        id="municipio"
+                        placeholder="Município"
                         required
                       />
                     </div>
                     <div class="form-group mt-3">
-                      <textarea
+                      <label for="birth"></label>
+                      <input
+                        type="date"
                         class="form-control"
-                        name="message"
-                        rows="5"
-                        placeholder="Message"
+                        name="birth"
+                        id="birth"
+                        placeholder="Data Aniversário"
                         required
-                      ></textarea>
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <label for="estadocivil">Estado Civil</label><br>
+                      <label for="estadocivil">Solteiro</label>
+                      <input
+                        type="radio"
+                        name="estadocivil"
+                        id="solteiro"
+                        value="Solteiro"
+                      />
+                      <label for="estadocivil">Casado</label>
+                      <input
+                        type="radio"
+                        name="estadocivil"
+                        id="casado"
+                        value="casado"
+                      />
+                      <label for="estadocivil">Separado</label>
+                      <input
+                        type="radio"
+                        name="estadocivil"
+                        id="separado"
+                        value="Separado"
+                      />
+                      <label for="estadocivil">Divorciado</label>
+                      <input
+                        type="radio"
+                        name="estadocivil"
+                        id="divorciado"
+                        value="divorciado"
+                      />
+                      <label for="estadocivil">União Estável</label>
+                      <input
+                        type="radio"
+                        name="estadocivil"
+                        id="uniaoestavel"
+                        value="uniaoestavel"
+                      />
                     </div>
                     <div class="my-3">
                       <div class="loading">Loading</div>
@@ -1177,14 +1257,19 @@
                         Your message has been sent. Thank you!
                       </div>
                     </div>
-                    <div class="text-center">
-                      <button type="submit">Send Message</button>
-                    </div>
+   
                   </form>
                 </div>
               </div>
 
               <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                      <h3>Dados Bancários</h3>
+                    </div>
+                  </div>
+                </div>
                 <div class="form contact-form">
                   <form
                     action="forms/contact.php"
@@ -1193,22 +1278,45 @@
                     class="php-email-form"
                   >
                     <div class="form-group">
+                        <label for="uf">Estado: </label>
+                        <select name="uf" id="uf">
+                          <option value=""></option>
+                          <option value="uf">AC</option>
+                          <option value="uf">AL</option>
+                          <option value="uf">AP</option>
+                          <option value="uf">AM</option>
+                          <option value="uf">BA</option>
+                          <option value="uf">CE</option>
+                          <option value="uf">DF</option>
+                          <option value="uf">ES</option>
+                          <option value="uf">GO</option>
+                          <option value="uf">MA</option>
+                          <option value="uf">MT</option>
+                          <option value="uf">MS</option>
+                          <option value="uf">MG</option>
+                          <option value="uf">PA</option>
+                          <option value="uf">PB</option>
+                          <option value="uf">PR</option>
+                          <option value="uf">PE</option>
+                          <option value="uf">PI</option>
+                          <option value="uf">RJ</option>
+                          <option value="uf">RN</option>
+                          <option value="uf">RS</option>
+                          <option value="uf">RO</option>
+                          <option value="uf">RR</option>
+                          <option value="uf">SC</option>
+                          <option value="uf">SP</option>
+                          <option value="uf">SE</option>
+                          <option value="uf">TO</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
                       <input
                         type="text"
-                        name="name"
                         class="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                        required
-                      />
-                    </div>
-                    <div class="form-group mt-3">
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
+                        name="municipio"
+                        id="municipio"
+                        placeholder="Município de Atuação"
                         required
                       />
                     </div>
@@ -1216,21 +1324,13 @@
                       <input
                         type="text"
                         class="form-control"
-                        name="subject"
-                        id="subject"
-                        placeholder="Subject"
+                        name="agencia"
+                        id="agencia"
+                        placeholder="Agencia"
                         required
                       />
                     </div>
-                    <div class="form-group mt-3">
-                      <textarea
-                        class="form-control"
-                        name="message"
-                        rows="5"
-                        placeholder="Message"
-                        required
-                      ></textarea>
-                    </div>
+                   
                     <div class="my-3">
                       <div class="loading">Loading</div>
                       <div class="error-message"></div>
@@ -1238,14 +1338,19 @@
                         Your message has been sent. Thank you!
                       </div>
                     </div>
-                    <div class="text-center">
-                      <button type="submit">Send Message</button>
-                    </div>
+
                   </form>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="section-headline text-center">
+                        <h3>Documentos</h3>
+                      </div>
+                    </div>
+                  </div>
                   <div class="form contact-form">
                     <form
                       action="forms/contact.php"
@@ -1253,23 +1358,55 @@
                       role="form"
                       class="php-email-form"
                     >
-                      <div class="form-group">
+                    <div class="form-group mt-3">
+                      <label for="document">Tipo documento</label><br>
+                      <label for="document">RG</label>
+                      <input
+                        type="radio"
+                        name="document"
+                        id="RG"
+                        value="RG"
+                      />
+                      <label for="document">CPF</label>
+                      <input
+                        type="radio"
+                        name="document"
+                        id="CPF"
+                        value="CPF"
+                      />
+                      <label for="document">Reservista</label>
+                      <input
+                        type="radio"
+                        name="document"
+                        id="reservista"
+                        value="reservista"
+                      />
+                      <label for="document">Título</label>
+                      <input
+                        type="radio"
+                        name="document"
+                        id="titulo"
+                        value="titulo"
+                      />
+                    </div>
+                      <div class="form-group mt-3">
                         <input
                           type="text"
-                          name="name"
                           class="form-control"
-                          id="name"
-                          placeholder="Your Name"
+                          name="numero"
+                          id="numero"
+                          placeholder="Número"
                           required
                         />
                       </div>
                       <div class="form-group mt-3">
+                        <label for="birth"></label>
                         <input
-                          type="email"
+                          type="date"
                           class="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="Your Email"
+                          name="expedicao"
+                          id="expedicao"
+                          placeholder="Data de expedição"
                           required
                         />
                       </div>
@@ -1277,21 +1414,13 @@
                         <input
                           type="text"
                           class="form-control"
-                          name="subject"
-                          id="subject"
-                          placeholder="Subject"
+                          name="orgao"
+                          id="orgao"
+                          placeholder="Órgão expedidor"
                           required
                         />
                       </div>
-                      <div class="form-group mt-3">
-                        <textarea
-                          class="form-control"
-                          name="message"
-                          rows="5"
-                          placeholder="Message"
-                          required
-                        ></textarea>
-                      </div>
+                     
                       <div class="my-3">
                         <div class="loading">Loading</div>
                         <div class="error-message"></div>
@@ -1299,14 +1428,19 @@
                           Your message has been sent. Thank you!
                         </div>
                       </div>
-                      <div class="text-center">
-                        <button type="submit">Send Message</button>
-                      </div>
+
                     </form>
                   </div>
                 </div>
   
                 <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="section-headline text-center">
+                        <h3>Endereço</h3>
+                      </div>
+                    </div>
+                  </div>
                   <div class="form contact-form">
                     <form
                       action="forms/contact.php"
@@ -1314,43 +1448,52 @@
                       role="form"
                       class="php-email-form"
                     >
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="name"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your Name"
-                          required
-                        />
-                      </div>
                       <div class="form-group mt-3">
                         <input
-                          type="email"
+                          type="text"
+                          name="endereco"
                           class="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="Your Email"
+                          id="endereco"
+                          placeholder="Tipo"
                           required
                         />
                       </div>
                       <div class="form-group mt-3">
                         <input
                           type="text"
+                          name="cep"
                           class="form-control"
-                          name="subject"
-                          id="subject"
-                          placeholder="Subject"
+                          id="cep"
+                          placeholder="CEP"
+                          required
+                        />
+                      </div>
+                      <div class="form-group mt-3">
+                        <input
+                          type="text"
+                          name="logradouro"
+                          class="form-control"
+                          id="logradouro"
+                          placeholder="Logradouro"
+                          required
+                        />
+                      </div>
+                      <div class="form-group mt-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="bairro"
+                          id="bairro"
+                          placeholder="Bairro"
                           required
                         />
                       </div>
                       <div class="form-group mt-3">
                         <textarea
                           class="form-control"
-                          name="message"
+                          name="complemento"
                           rows="5"
-                          placeholder="Message"
-                          required
+                          placeholder="Complemento"
                         ></textarea>
                       </div>
                       <div class="my-3">
@@ -1360,14 +1503,19 @@
                           Your message has been sent. Thank you!
                         </div>
                       </div>
-                      <div class="text-center">
-                        <button type="submit">Send Message</button>
-                      </div>
+
                     </form>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center">
+                          <h3>Telefones</h3>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form contact-form">
                       <form
                         action="forms/contact.php"
@@ -1375,45 +1523,76 @@
                         role="form"
                         class="php-email-form"
                       >
-                        <div class="form-group">
+                      <div class="form-group mt-3">
+                        <label for="telefone">Telefone 01</label><br>
+                        <label for="telefone">Residencial</label>
+                        <input
+                          type="radio"
+                          name="telefone"
+                          id="residencial"
+                          value="residencial"
+                        />
+                        <label for="telefone">Comercial</label>
+                        <input
+                          type="radio"
+                          name="telefone"
+                          id="comercial"
+                          value="comercial"
+                        />
+                        <label for="telefone">Celular</label>
+                        <input
+                          type="radio"
+                          name="telefone"
+                          id="celular"
+                          value="celular"
+                        />
+            
+                      </div>
+                        <div class="form-group mt-3">
                           <input
                             type="text"
-                            name="name"
                             class="form-control"
-                            id="name"
-                            placeholder="Your Name"
+                            name="telefone"
+                            id="telefone"
+                            placeholder="Telefone"
                             required
                           />
                         </div>
                         <div class="form-group mt-3">
+                          <label for="telefone">Telefone 02</label><br>
+                          <label for="telefone">Residencial</label>
                           <input
-                            type="email"
-                            class="form-control"
-                            name="email"
-                            id="email"
-                            placeholder="Your Email"
-                            required
+                            type="radio"
+                            name="telefone"
+                            id="residencial"
+                            value="residencial"
                           />
-                        </div>
-                        <div class="form-group mt-3">
+                          <label for="telefone">Comercial</label>
                           <input
-                            type="text"
-                            class="form-control"
-                            name="subject"
-                            id="subject"
-                            placeholder="Subject"
-                            required
+                            type="radio"
+                            name="telefone"
+                            id="comercial"
+                            value="comercial"
                           />
+                          <label for="telefone">Celular</label>
+                          <input
+                            type="radio"
+                            name="telefone"
+                            id="celular"
+                            value="celular"
+                          />
+              
                         </div>
-                        <div class="form-group mt-3">
-                          <textarea
-                            class="form-control"
-                            name="message"
-                            rows="5"
-                            placeholder="Message"
-                            required
-                          ></textarea>
-                        </div>
+                          <div class="form-group mt-3">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="telefone"
+                              id="telefone"
+                              placeholder="Telefone"
+                              required
+                            />
+                          </div>
                         <div class="my-3">
                           <div class="loading">Loading</div>
                           <div class="error-message"></div>
@@ -1427,6 +1606,13 @@
                   </div>
     
                   <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center">
+                          <h3>Email</h3>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form contact-form">
                       <form
                         action="forms/contact.php"
@@ -1434,16 +1620,7 @@
                         role="form"
                         class="php-email-form"
                       >
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            name="name"
-                            class="form-control"
-                            id="name"
-                            placeholder="Your Name"
-                            required
-                          />
-                        </div>
+                       
                         <div class="form-group mt-3">
                           <input
                             type="email"
@@ -1454,25 +1631,7 @@
                             required
                           />
                         </div>
-                        <div class="form-group mt-3">
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="subject"
-                            id="subject"
-                            placeholder="Subject"
-                            required
-                          />
-                        </div>
-                        <div class="form-group mt-3">
-                          <textarea
-                            class="form-control"
-                            name="message"
-                            rows="5"
-                            placeholder="Message"
-                            required
-                          ></textarea>
-                        </div>
+                      
                         <div class="my-3">
                           <div class="loading">Loading</div>
                           <div class="error-message"></div>
@@ -1480,9 +1639,7 @@
                             Your message has been sent. Thank you!
                           </div>
                         </div>
-                        <div class="text-center">
-                          <button type="submit">Send Message</button>
-                        </div>
+
                       </form>
                     </div>
                   </div>
