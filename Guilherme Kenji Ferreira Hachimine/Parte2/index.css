@@ -55,6 +55,8 @@ time, mark, audio, video {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+
+
 .welcome-name {
     font-size:14px;
     font-weight: bold;
@@ -63,6 +65,8 @@ time, mark, audio, video {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     flex-wrap: break-word;
 }
+
+
 
 .user-avatar {
     margin: 0.3em 0 0 0.5em;
@@ -74,7 +78,19 @@ time, mark, audio, video {
 }
 
 .carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
+.banner {
+    height: 450px;
 }
 
 .body-menu {
@@ -82,5 +98,68 @@ time, mark, audio, video {
 }
 
 .footer {
-    
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex > div {
+    flex: 1 1 300px;
+    margin: 0 5px 5px 0;
+  }
+
+.opt {
+    display: flex;
+    flex-direction: row;
+}
+
+.opt-img {
+    padding: 0;
+    float: left;
+    margin-right: -45px;
+    z-index: -1;
+}
+
+.opt-description {
+    font-size:14px;
+    color: #fff;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.opt-title{
+    font-size:1.1em;
+    width: 50%;
+    padding: 0.5em;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    flex-wrap: break-word;
+}
+
+.red {
+    background-color:#CA2C2D; 
+}
+
+.light-blue {
+    background-color:#337ab7
+}
+
+
+.yellow {
+    background-color:#E28400
+}
+
+.dark-blue {
+    background-color:#2E7EA3
+}
+
+.grey {
+    background-color:#818f96
 }
